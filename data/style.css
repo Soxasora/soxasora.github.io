@@ -6,8 +6,17 @@ body {
 }
 
 
-h1 {
-    font-size: 100px !important;
+.overlay {
+    position:fixed; 
+    display: true; 
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(56, 54, 54, 0.5); 
+    z-index: 2;
 }
 
 .nav {
@@ -19,26 +28,53 @@ h1 {
     display: inline-block;
     color: white;
     padding-right: 10px;
-    font-size: 20px;
+    font-size: 30px;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.menubar a {
+    text-decoration: none;
+    color: white;
 }
 
 .box {
-    position: fixed; 
-    display: true; 
-    width: 100%; 
-    height: 100%; 
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(56, 54, 54, 0.5); 
-    z-index: 2;
+    padding: 20%;
     text-align: center;
     color: white;
-    padding: 250px 0;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    
 }
+
+.box span {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    vertical-align: middle;
+}
+
+.box h1 {
+    font-size: 100px !important;
+}
+
 
 .box i {
     font-size: 40px;
     padding: 10px;
+}
+
+/* swag */
+
+#swag:hover {
+    animation: rainbow 5s infinite;
+}
+
+@keyframes rainbow {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: blue; }
+    71% { color: indigo; }
+    85% { color: violet; }
+    100% { color: red; }
 }
