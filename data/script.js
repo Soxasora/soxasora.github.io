@@ -1,6 +1,6 @@
 function niceText() {
     var box = document.createElement('span');
-    box.innerHTML = "Hey there."
+    box.innerHTML = "Minecraft > Terraria"
     document.getElementById("soxa").appendChild(box);
 }
 

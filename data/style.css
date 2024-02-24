@@ -3,8 +3,8 @@ body {
     background-position: right bottom; 
     background-repeat: no-repeat; 
     background-attachment: fixed; 
+    background-size: cover;
 }
-
 
 .overlay {
     position:fixed; 
@@ -37,12 +37,185 @@ body {
     color: white;
 }
 
-.box {
-    padding: 20%;
+/* .box {
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: -10px;
+    
+    /* -1/2 height 
     text-align: center;
     color: white;
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
-    
+    border: 5px solid black;
+} */
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 400px;
+    margin: auto auto;
+    margin-top: 15%;
+    background-color: rgba(48, 48, 48, 0.1);
+    backdrop-filter: blur(64px);
+    -webkit-backdrop-filter: blur(64px);
+    border: 0px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  }
+
+.insidebox {
+    margin: auto auto;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.insidebox a {
+    color: white;
+}
+
+.insidebox a:hover {
+    animation: rainbow 3s infinite;
+}
+
+#face {
+    width: 120px;
+    border: 4px;
+    border-radius: 12px;
+    box-shadow:0 0 40px purple;
+}
+
+.inside_top {
+    display: inline-block;
+}
+
+#soxa {
+    float: right;
+    margin-left: 20px;
+}
+
+#cursor {
+    animation: blinking 1s linear infinite;
+    font-size: 50px;
+}
+
+.inside_bottom {
+    margin-top: 50px;
+}
+
+.inside_bottom a {
+    text-decoration: none;
+}
+
+#github {
+    position: relative;
+    font-style: normal;
+}
+
+#github:after {
+    display:none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    border: 0px;
+    border-radius: 12px;
+    background-color: rgba(48, 48, 48, 0.1);
+    backdrop-filter: blur(64px);
+    -webkit-backdrop-filter: blur(64px);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    padding: 10px;
+    font-size: 25px;
+    content: "Github";
+}
+
+#github:hover:after {
+    display: block
+}
+
+#twitter {
+    position: relative;
+    font-style: normal;
+}
+
+#twitter:after {
+    display:none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    border: 0px;
+    border-radius: 12px;
+    background-color: rgba(48, 48, 48, 0.1);
+    backdrop-filter: blur(64px);
+    -webkit-backdrop-filter: blur(64px);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    padding: 10px;
+    font-size: 25px;
+    content: "Twitter/X";
+}
+
+#twitter:hover:after {
+    display: block
+}
+
+#mail {
+    position: relative;
+    font-style: normal;
+}
+
+#mail:after {
+    display:none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    border: 0px;
+    border-radius: 12px;
+    background-color: rgba(48, 48, 48, 0.1);
+    backdrop-filter: blur(64px);
+    -webkit-backdrop-filter: blur(64px);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+    content: "simone@soxa.dev";
+}
+
+#mail:hover:after {
+    display: block
+}
+
+#discord {
+    position: relative;
+    font-style: normal;
+}
+
+#discord:after {
+    display:none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    border: 0px;
+    border-radius: 12px;
+    background-color: rgba(48, 48, 48, 0.1);
+    backdrop-filter: blur(64px);
+    -webkit-backdrop-filter: blur(64px);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    padding: 10px;
+    font-size: 25px;
+    content: "Discord";
+}
+
+#discord:hover:after {
+    display: block
 }
 
 .box span {
@@ -55,7 +228,6 @@ body {
 .box h1 {
     font-size: 100px !important;
 }
-
 
 .box i {
     font-size: 40px;
@@ -77,4 +249,11 @@ body {
     71% { color: indigo; }
     85% { color: violet; }
     100% { color: red; }
+}
+
+@keyframes blinking {
+    0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
 }
