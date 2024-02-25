@@ -65,9 +65,9 @@ body {
     display: flex;
     justify-content: left;
     align-items: left;
+    
+    margin: 5%;
     margin-top: 10%;
-    margin-left: -29%;
-    max-width: 100%;
     background-color: rgb(255 255 255/.3);
     backdrop-filter: blur(64px);
     -webkit-backdrop-filter: blur(64px);
@@ -88,7 +88,7 @@ body {
     position: absolute;
     display: flex;
     top: 16px;
-    left: 4%;
+    left: 16px;
     width: 60%;
   }
 
@@ -118,6 +118,11 @@ body {
 #soxa {
     float: right;
     margin-left: 20px;
+    
+}
+
+#soxa h1 {
+    font-size: 3.2vw !important;
 }
 
 #cursor {
