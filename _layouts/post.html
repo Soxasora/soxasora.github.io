@@ -11,7 +11,7 @@
     <div class="overlay">
         <div class="logo">
             <div class="inside_logo">
-                <img id="face" onclick="egg()" src="../../../../../assets/img/face.png"></img><span id="soxa"><h1>@soxa >> {{ page.title | escape }} <span id="cursor">_</span></h1></span>
+                <img id="face" onclick="egg()" src="../../../../../assets/img/face.png"></img><span id="soxa"><h1>@soxa >> {{ page.title }} <span id="cursor">_</span></h1></span>
             </div>
         </div>
         <div class="nav">
@@ -26,6 +26,8 @@
         <br>
         <div class="box" id="topbox"> 
             <div class="insidebox">
+                {{ page.title }}<br>
+                {{ page.date }}
                 {{ content }}
             </div>
         </div>
