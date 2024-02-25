@@ -1,0 +1,349 @@
+body {
+    background-image: url(../../../../../assets/img/bg.jpg);
+    background-position: right bottom; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: cover;
+}
+
+.overlay {
+    position:fixed; 
+    display: true; 
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(99, 97, 97, 0.1); 
+    z-index: 2;
+}
+
+.nav {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background-color: rgba(48, 48, 48, 0.1);
+    backdrop-filter: blur(64px);
+    -webkit-backdrop-filter: blur(64px);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    top: 16px;
+    right: 16px;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.menubar li {
+    float: left;
+    list-style: none;
+    padding-right: 15px;
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    
+}
+
+.menubar a {
+    text-decoration: none;
+    color: white;
+}
+
+/* .box {
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: -10px;
+    
+    /* -1/2 height 
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    border: 5px solid black;
+} */
+
+.box {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 400px;
+    background-color: rgba(48, 48, 48, 0.1);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 0;
+    border-color: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+    border-radius: 12px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  }
+
+.insidebox {
+    margin: auto auto;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.insidebox a {
+    color: white;
+}
+
+.insidebox a:hover {
+    animation: rainbow 3s infinite;
+}
+
+#face {
+    width: 120px;
+    border: 4px;
+    border-radius: 12px;
+    box-shadow:0 0 40px purple;
+}
+
+.inside_top {
+    display: inline-block;
+}
+
+#soxa {
+    float: right;
+    margin-left: 20px;
+}
+
+#cursor {
+    animation: blinking 1s linear infinite;
+    font-size: 50px;
+}
+
+.inside_bottom {
+    margin-top: 50px;
+}
+
+.inside_bottom a {
+    text-decoration: none;
+}
+
+#github {
+    position: relative;
+    font-style: normal;
+}
+
+#github:after {
+    display:none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    border: 0px;
+    border-radius: 12px;
+    background-color: rgba(48, 48, 48, 0.1);
+    backdrop-filter: blur(64px);
+    -webkit-backdrop-filter: blur(64px);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    padding: 10px;
+    font-size: 25px;
+    content: "Github";
+}
+
+#github:hover:after {
+    margin-left: -50px;
+    margin-top: 30px;
+    display: block
+}
+
+#twitter {
+    position: relative;
+    font-style: normal;
+}
+
+#twitter:after {
+    display:none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    border: 0px;
+    border-radius: 12px;
+    background-color: rgba(48, 48, 48, 0.1);
+    backdrop-filter: blur(64px);
+    -webkit-backdrop-filter: blur(64px);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    padding: 10px;
+    font-size: 25px;
+    content: "Twitter/X";
+}
+
+#twitter:hover:after {
+    margin-left: -50px;
+    margin-top: 30px;
+    display: block
+}
+
+#mail {
+    position: relative;
+    font-style: normal;
+}
+
+#mail:after {
+    display:none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    border: 0px;
+    border-radius: 12px;
+    background-color: rgba(48, 48, 48, 0.1);
+    backdrop-filter: blur(64px);
+    -webkit-backdrop-filter: blur(64px);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+    content: "simone@soxa.dev";
+}
+
+#mail:hover:after {
+    margin-left: -50px;
+    margin-top: 30px;
+    display: block
+}
+
+#discord {
+    position: relative;
+    font-style: normal;
+}
+
+#discord:after {
+    display:none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    border: 0px;
+    border-radius: 12px;
+    background-color: rgba(48, 48, 48, 0.1);
+    backdrop-filter: blur(64px);
+    -webkit-backdrop-filter: blur(64px);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    padding: 10px;
+    font-size: 25px;
+    content: "Discord";
+}
+
+#discord:hover:after {
+    margin-left: -50px;
+    margin-top: 30px;
+    display: block
+}
+
+.box span {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    vertical-align: middle;
+}
+
+.box h1 {
+    font-size: 100px !important;
+}
+
+.box i {
+    font-size: 40px;
+    padding: 10px;
+}
+
+#alternator {
+    position: fixed;
+    border: 0px;
+    border-radius: 12px;
+    background-color: rgba(48, 48, 48, 0.1);
+    backdrop-filter: blur(64px);
+    -webkit-backdrop-filter: blur(64px);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 25px;
+    bottom: 16px;
+    right: 16px;
+    font-size: 30px;
+    font-style: normal;
+    color: white;
+    cursor: pointer;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#alternator:hover {
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+}
+
+#alternator:active {
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+#go_top {
+    position: fixed;
+    border: 0px;
+    border-radius: 12px;
+    background-color: rgba(48, 48, 48, 0.1);
+    backdrop-filter: blur(64px);
+    -webkit-backdrop-filter: blur(64px);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 25px;
+    bottom: 16px;
+    left: 16px;
+    font-size: 30px;
+    font-style: normal;
+    color: white;
+    cursor: pointer;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#go_top:hover {
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+}
+
+#go_top:active {
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+/* swag */
+
+#swag:hover {
+    animation: rainbow 5s infinite;
+}
+
+@keyframes rainbow {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: blue; }
+    71% { color: indigo; }
+    85% { color: violet; }
+    100% { color: red; }
+}
+
+@keyframes blinking {
+    0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}

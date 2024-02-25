@@ -26,14 +26,13 @@ function refreshBg() {
 
 function setBg(bg) {
     if (bg == 0) {
-        document.body.style.backgroundImage = "url('../img/bg-alternate.jpeg')";
+        document.body.style.backgroundImage = "url('../../../../../assets/img/bg-alternate.jpeg')";
         document.getElementById('alternate').innerHTML = `<i id="alternator" class="bi bi-brightness-alt-high" onclick="setBg(1)"> night</i>`;
         alternate = 0;
     } else {
-        document.body.style.backgroundImage = "url('../img/bg.jpg')";
+        document.body.style.backgroundImage = "url('../../../../../assets/img/bg.jpg')";
         document.getElementById('alternate').innerHTML = `<i id="alternator" class="bi bi-brightness-alt-high-fill" onclick="setBg(0)"> day</i>`;
         alternate = 1;
     }
     localStorage.setItem("alternate", alternate);
 }
-
