@@ -159,6 +159,34 @@ body {
     display: block
 }
 
+#linkedin {
+    position: relative;
+    font-style: normal;
+}
+
+#linkedin:after {
+    display:none;
+    position:absolute;
+    top:50%;
+    left:50%;
+    border: 0px;
+    border-radius: 12px;
+    background-color: rgba(48, 48, 48, 0.1);
+    backdrop-filter: blur(64px);
+    -webkit-backdrop-filter: blur(64px);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    padding: 10px;
+    font-size: 25px;
+    content: "LinkedIn";
+}
+
+#linkedin:hover:after {
+    margin-left: -50px;
+    margin-top: 30px;
+    display: block
+}
+
 #twitter {
     position: relative;
     font-style: normal;
